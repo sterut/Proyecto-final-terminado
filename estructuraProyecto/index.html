@@ -1,93 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="styles.css" />
-  <title>Cultura CABA</title>
-</head>
-<body>
+<!doctype html>
+</nav>
+<button class="nav-toggle" aria-label="Abrir menú">☰</button>
+</div>
+</header>
 
-  <!-- HEADER -->
-  <header>
-    <div class="logo">
-      <a href="#home"><img src="logo.png" alt="Logo"></a>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#laburo">Laburo</a></li>
-        <li><a href="#amor">Amor</a></li>
-        <li><a href="#movidas">Movidas</a></li>
-        <li><a href="#hogar">Hogar</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- HERO -->
-  <section id="home" class="intro">
-    <h1>Encontrá casa, laburo, amor y movidas culturales en CABA</h1>
-  </section>
+<main>
+<section class="hero">
+<div class="container hero-inner">
+<h1>Conectá con tu tribu en CABA</h1>
+<p class="lead">Un espacio para gente viajera, responsable y con códigos. Encontrá propuestas, ofrecé lo tuyo, sumate.</p>
+<a href="#propuestas" class="btn btn-primary">Ver propuestas</a>
+</div>
+</section>
 
-  <!-- GUÍA LABURO -->
-  <section id="laburo" class="guia">
-    <h2>Laburo</h2>
-    <p>Encontrá oportunidades laborales y conectá con proyectos y empresas en la ciudad.</p>
-    <div class="grid-destacados">
-      <article class="card">Oferta laboral 1</article>
-      <article class="card">Oferta laboral 2</article>
-      <article class="card">Oferta laboral 3</article>
-    </div>
-  </section>
-  
-  <!-- GUÍA AMOR -->
-  <section id="amor" class="guia">
-    <h2>Amor</h2>
-    <p>Conocé personas afines y descubrí nuevas formas de conectar en la ciudad.</p>
-    <div class="grid-destacados">
-      <article class="card">Evento romántico</article>
-      <article class="card">Encuentro comunitario</article>
-      <article class="card">Historia destacada</article>
-    </div>
-  </section>
-  
-  <!-- GUÍA MOVIDAS -->
-  <section id="movidas" class="guia">
-    <h2>Movidas</h2>
-    <p>Enterate de las movidas culturales y sociales más importantes en CABA.</p>
-    <div class="grid-destacados">
-      <article class="card">Festival</article>
-      <article class="card">Concierto</article>
-      <article class="card">Exposición</article>
-    </div>
-  </section>
-  
-  <!-- GUÍA HOGAR -->
-  <section id="hogar" class="guia">
-    <h2>Hogar</h2>
-    <p>Buscá tu próxima casa o depto compartido en la comunidad.</p>
-    <div class="grid-destacados">
-      <article class="card">Depto en Palermo</article>
-      <article class="card">Habitación en Almagro</article>
-      <article class="card">Casa en Caballito</article>
-    </div>
-  </section>
-  
-  <!-- NOSOTROS -->
-  <section id="nosotros" class="nosotros">
-    <h2>Nosotros</h2>
-    <p>
-      Somos una comunidad que conecta personas con oportunidades en CABA: 
-      laburo, hogar, amor y movidas culturales. 
-      Nuestro objetivo es crear un espacio de confianza donde compartir y crecer juntos.
-    </p>
-  </section>
-  
-  <!-- MAPA -->
-  <section id="mapa" class="mapa">
-    <h2>Mapa Interactivo</h2>
-    <p>Ubicá los espacios y eventos de la comunidad en Buenos Aires.</p>
-    <div class="map-placeholder">
-      <!-- Embed de Google Maps -->
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13132.072528122745!2d-58.40524425723628!3d-34.60368489960061!2m3!1f0!2f0!3f0!3m2!1i1024
+
+<section id="propuestas" class="container section-proposals">
+<h2>Propuestas recientes</h2>
+<div class="grid proposals-grid">
+<!-- ejemplo de tarjeta -->
+<article class="card">
+<img src="/assets/img/placeholder.jpg" alt="Foto propuesta intercambio de casa">
+<div class="card-body">
+<h3>Intercambio de casa por ayuda en cocina</h3>
+<p class="meta">@sol — Hogar — Palermo</p>
+<p class="excerpt">Busco alguien responsable para cuidar el depto mientras viajo. Preferible gente con referencias.</p>
+<a href="hogar.html" class="btn btn-outline">Ver</a>
+</div>
+</article>
+
+
+<!-- duplicá las cards según necesites -->
+
+
+</div>
+</section>
+
+
+<section class="container subscribe">
+<h2>Unite a la tribu</h2>
+<form class="subscribe-form" action="#" method="post">
+<label for="email" class="sr-only">Email</label>
+<input id="email" name="email" type="email" placeholder="Tu correo" required>
+<button class="btn btn-primary" type="submit">Unite</button>
+</form>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<div class="container footer-inner">
+<nav>
+<a href="amor.html">Amor</a> · <a href="laburo.html">Laburo</a> · <a href="hogar.html">Hogar</a> · <a href="movidas.html">Movidas</a>
+</nav>
+<p>© <span id="year"></span> Comunidad CABA</p>
+</div>
+</footer>
+
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
+

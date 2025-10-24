@@ -1,10 +1,10 @@
-/* Error: expected ";".
- *    ,
- * 56 |   color: $color-primario white-space: nowrap   !important;
- *    |                                     ^
- *    '
- *   sass/base/_variables.scss 56:37  @import
- *   sass/style.scss 2:9              root stylesheet */
+/* Error: Undefined variable.
+ *   ,
+ * 2 |   max-width: $max-width;
+ *   |              ^^^^^^^^^^
+ *   '
+ *   sass/layout/_grid.scss 2:14  @import
+ *   sass/style.scss 4:9          root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: expected ";".\a    \2577 \a 56 \2502    color: $color-primario white-space: nowrap   !important;\a    \2502                                      ^\a    \2575 \a   sass/base/_variables.scss 56:37  @import\a   sass/style.scss 2:9              root stylesheet';
+  content: "Error: Undefined variable.\a   \2577 \a 2 \2502    max-width: $max-width;\a   \2502               ^^^^^^^^^^\a   \2575 \a   sass/layout/_grid.scss 2:14  @import\a   sass/style.scss 4:9          root stylesheet";
 }

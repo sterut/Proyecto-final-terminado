@@ -1,74 +1,41 @@
-// ==========================
-// VARIABLES GLOBALES
-// ==========================
-// Variables de layout
-$max-width: 1200px;
-// Colores base
-$white: #fff;
-$black: #000;
+// 🎨 Colores base
+$white: #ffffff;
+$black: #000000;
 
+// 💜 Paleta principal (violeta + acento cálido)
+$color-primario: #8b5cf6; // violeta principal
+$color-secundario: #a78bfa; // violeta claro
+$color-acento: #f5c518; // detalle dorado suave o podés usar rosa #ec4899
 
+// 🌫️ Fondo y texto
+$bg: #f9f8ff; // fondo muy claro con leve violeta
+$texto-principal: #1a1a1a;
+$texto-secundario: #4b5563;
 
-// PALETA PRINCIPAL (ajustá estos tres y probá combinaciones)
-$color-primario: #7b2cbf;   // violeta elegante
-$color-secundario: #ff9f1c; // naranja suave para acentos
-$color-fondo: #f8f9fa;      // gris claro de base
-
-// TONOS DE TEXTO
-$texto-principal: #212529;
-$texto-secundario: #555;
-
-// FONDOS Y BORDES
-$bg: $color-fondo;
+// 🟪 Elementos UI
 $border-color: lighten($texto-principal, 60%);
+$hover-color: darken($color-primario, 8%);
+$btn-color: $color-primario;
 
-// FUENTES
+// Tipografía
 $font-sans: 'Poppins', sans-serif;
-
-// SOMBRAS Y EFECTOS
-$sombra-suave: 0 4px 12px rgba(0, 0, 0, 0.08);
-$sombra-hover: 0 6px 16px rgba($color-primario, 0.25);
-
-// ==========================
-// USO BASE DE COLORES
-// ==========================
-
-// Ejemplo de cómo aplicarlos globalmente
-body {
-  background-color: $bg;
-  color: $texto-principal;
-  font-family: $font-sans;
-  line-height: 1.5;
-}
-
 
 // Botones
 .btn-primary {
   background-color: $color-primario !important;
   border-color: $color-primario !important;
+  color: $white !important;
+
   &:hover {
-    background-color: darken($color-primario, 8%) !important;
-    box-shadow: $sombra-hover;
+    background-color: $hover-color !important;
   }
 }
 
 .btn-outline-primary {
-  color: $color-primario white-space: nowrap   !important;
   border-color: $color-primario !important;
-  &:hover {
-    background-color: $color-primario !important;
-    color: #fff !important;
-  }
-}
-
-// Tarjetas
-.card {
-  border: 1px solid $border-color;
-  box-shadow: $sombra-suave;
-  transition: all 0.2s ease-in-out;
+  color: $color-primario !important;
 
   &:hover {
-    transform: translateY(-4px);
-    box-shadow: $sombra-hover;
+    background-color: $hover-color !important;
   }
 }

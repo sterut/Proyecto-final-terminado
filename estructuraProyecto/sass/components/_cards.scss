@@ -1,13 +1,21 @@
+// _cards.scss
 .card {
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 6px 18px rgba(12,12,12,0.06);
+  border: 1px solid #eee;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 
-  .card-body {
-    padding: 1rem;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   }
 
-  &-title { font-weight:600; color: $primary; }
-}
+  .card-title {
+    color: $primary;
+    font-weight: 600;
+  }
 
+  .card-text {
+    color: #555;
+  }
+}
 

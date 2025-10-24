@@ -1,16 +1,23 @@
-// Buttons
+$violeta: #7b2cbf; // tono violeta
+
 .btn-primary {
-  background-color: $accent; // podés definir $accent en _variables.scss
-  border-color: $accent;
-  color: #fff;
-  font-weight: 600;
-  border-radius: 8px;
-  padding: 8px 18px;
+  background-color: $violeta !important;
+  border-color: $violeta !important;
+  color: #fff !important;
   transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: darken($violeta, 10%) !important;
+  border-color: darken($violeta, 10%) !important;
+}
+
+.btn-outline-light {
+  color: $violeta !important;
+  border-color: $violeta !important;
 
   &:hover {
-    background-color: darken($accent, 8%);
-    border-color: darken($accent, 8%);
-    transform: scale(1.05);
+    background-color: $violeta !important;
+    color: #fff !important;
   }
 }

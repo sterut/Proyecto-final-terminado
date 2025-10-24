@@ -1,74 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laburo - Cultura CABA</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Laburo — Cultura CABA</title>
+  <meta name="description" content="Ofertas y proyectos creativos en Buenos Aires.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  
-  <!-- Header igual en todas -->
-  <header>
-    <div class="logo">
-      <a href="index.html"><img src="logo.png" alt="Logo del sitio"></a>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="laburo.html" class="active">Laburo</a></li>
-        <li><a href="amor.html">Amor</a></li>
-        <li><a href="movidas.html">Movidas</a></li>
-        <li><a href="hogar.html">Hogar</a></li>
-      </ul>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg container">
+      <a class="navbar-brand" href="../index.html">Cultura CABA</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav2"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="nav2">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="laburo.html">Laburo</a></li>
+          <li class="nav-item"><a class="nav-link" href="amor.html">Amor</a></li>
+          <li class="nav-item"><a class="nav-link" href="movidas.html">Movidas</a></li>
+          <li class="nav-item"><a class="nav-link" href="hogar.html">Hogar</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
-  <!-- Contenido principal de Laburo -->
-  <main>
-    <section class="hero">
-      <h1>Laburo en CABA</h1>
-      <p>Encontrá oportunidades laborales y conectá con empresas y proyectos.</p>
-    </section>
+  <main class="container my-5">
+    <h1>Laburo</h1>
+    <p>Encontrá oportunidades laborales y conectá con proyectos y empresas en la ciudad.</p>
 
-    <section class="ofertas">
-      <h2>Ofertas destacadas</h2>
-      <div class="grid-destacados">
-        <article class="card">
-          <h3>Puesto: Diseñador UX/UI</h3>
-          <p>Empresa: Startup Creativa</p>
-          <button>Postularme</button>
+    <section aria-labelledby="ofertas">
+      <h2 id="ofertas">Ofertas recientes</h2>
+      <div class="row g-3">
+        <article class="col-12 col-md-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="h5">Oferta laboral 1</h3>
+              <p>Descripción breve de la oferta y requisitos.</p>
+              <a href="#" class="btn btn-sm btn-primary">Postular</a>
+            </div>
+          </div>
         </article>
-        <article class="card">
-          <h3>Puesto: Community Manager</h3>
-          <p>Empresa: Agencia Digital</p>
-          <button>Postularme</button>
-        </article>
-        <article class="card">
-          <h3>Puesto: Desarrollador Frontend</h3>
-          <p>Empresa: Tech Solutions</p>
-          <button>Postularme</button>
+        <article class="col-12 col-md-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="h5">Oferta laboral 2</h3>
+              <p>Descripción breve de la oferta y requisitos.</p>
+              <a href="#" class="btn btn-sm btn-primary">Postular</a>
+            </div>
+          </div>
         </article>
       </div>
     </section>
-
-    <section class="tips">
-      <h2>Consejos para tu búsqueda</h2>
-      <ul>
-        <li>Armá un CV claro y visual.</li>
-        <li>Mostrá tus proyectos en un portfolio.</li>
-        <li>Conectá con la comunidad para más referencias.</li>
-      </ul>
-    </section>
   </main>
 
-  <!-- Footer igual en todas -->
-  <footer>
-    <a href="https://instagram.com" target="_blank">
-      <img src="instagram-icon.png" alt="Instagram">
-    </a>
-    <p>&copy; 2025 Cultura CABA</p>
+  <footer class="site-footer bg-dark text-white py-3">
+    <div class="container text-center">© 2025 Cultura CABA</div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>itial-scale=1.0">
+</html>

@@ -1,0 +1,13 @@
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(12,12,12,0.06);
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  &-title { font-weight:600; color: $primary; }
+}
+
+

@@ -1,0 +1,16 @@
+// Buttons
+.btn-primary {
+  background-color: $accent; // podés definir $accent en _variables.scss
+  border-color: $accent;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 8px 18px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: darken($accent, 8%);
+    border-color: darken($accent, 8%);
+    transform: scale(1.05);
+  }
+}

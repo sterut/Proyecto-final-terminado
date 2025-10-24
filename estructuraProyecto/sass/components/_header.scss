@@ -1,0 +1,13 @@
+// _header.scss
+header {
+  background-color: transparent;
+  nav a {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+
+    &:hover {
+      color: #d1b3ff;
+    }
+  }
+}

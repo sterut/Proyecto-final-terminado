@@ -41,13 +41,6 @@ body {
   line-height: 1.5;
 }
 
-a {
-  color: $color-primario;
-  text-decoration: none;
-  &:hover {
-    color: darken($color-primario, 10%);
-  }
-}
 
 // Botones
 .btn-primary {
@@ -60,7 +53,7 @@ a {
 }
 
 .btn-outline-primary {
-  color: $color-primario !important;
+  color: $color-primario white-space: nowrap   !important;
   border-color: $color-primario !important;
   &:hover {
     background-color: $color-primario !important;

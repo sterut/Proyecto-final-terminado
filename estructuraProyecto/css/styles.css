@@ -1,10 +1,10 @@
-/* Error: Undefined variable.
+/* Error: expected ";".
  *    ,
- * 13 |     color: $primary;
- *    |            ^^^^^^^^
+ * 56 |   color: $color-primario white-space: nowrap   !important;
+ *    |                                     ^
  *    '
- *   sass/components/_cards.scss 13:12  @import
- *   sass/style.scss 7:9                root stylesheet */
+ *   sass/base/_variables.scss 56:37  @import
+ *   sass/style.scss 2:9              root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 13 \2502      color: $primary;\a    \2502             ^^^^^^^^\a    \2575 \a   sass/components/_cards.scss 13:12  @import\a   sass/style.scss 7:9                root stylesheet";
+  content: 'Error: expected ";".\a    \2577 \a 56 \2502    color: $color-primario white-space: nowrap   !important;\a    \2502                                      ^\a    \2575 \a   sass/base/_variables.scss 56:37  @import\a   sass/style.scss 2:9              root stylesheet';
 }

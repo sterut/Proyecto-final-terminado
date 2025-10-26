@@ -1,41 +1,24 @@
-// Definí tus colores base
-$violeta: #7b2cbf;
-$violeta-hover: darken($violeta, 8%);
-$violeta-glow: rgba(123, 44, 191, 0.4); // efecto brillo violeta translúcido
-
-// Botones sólidos
-.btn-primary {
-  background-color: $violeta !important;
-  border-color: $violeta !important;
-  color: #fff !important;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-
-  &:hover {
-    background-color: $violeta-hover !important;
-    border-color: $violeta-hover !important;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px $violeta-glow;
-  }
-
-  &:active {
-    transform: translateY(0);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-  }
+/* Overrides Bootstrap a tu paleta */
+.btn-primary{
+  --bs-btn-bg: #{$color-primario};
+  --bs-btn-border-color: #{$color-primario};
+  --bs-btn-hover-bg: #{$color-secundario};
+  --bs-btn-hover-border-color: #{$color-secundario};
+  --bs-btn-active-bg: #{$color-secundario};
+  --bs-btn-active-border-color: #{$color-secundario};
+  box-shadow: $shadow-soft;
+  border-radius: $radius;
 }
-
-// Botones con borde
-.btn-outline-primary {
-  color: $violeta !important;
-  border-color: $violeta !important;
-  background-color: transparent;
-  transition: all 0.3s ease;
-
-  &:hover {
-    background-color: $violeta !important;
-    color: #fff !important;
-    box-shadow: 0 4px 10px $violeta-glow;
-    transform: translateY(-2px);
-  }
+.btn-outline-primary{
+  --bs-btn-color: #{$color-secundario};
+  --bs-btn-border-color: #{$color-secundario};
+  --bs-btn-hover-bg: #{$color-secundario};
+  --bs-btn-hover-border-color: #{$color-secundario};
+  --bs-btn-hover-color: #000;
+  border-radius: $radius;
+}
+.btn{
+  padding: .6rem 1rem;
+  white-space: nowrap;
 }
 

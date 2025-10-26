@@ -1,41 +1,28 @@
-// 🎨 Colores base
-$white: #ffffff;
-$black: #000000;
+// Paleta (Cultura CABA)
+$color-primario: #97F9F9;   // aqua
+$color-secundario: #A4DEF9; // celeste
+$color-texto: #222;
+$color-texto-suave: #555;
+$color-fondo: #ffffff;
+$color-fondo-oscuro: #111;
 
-// 💜 Paleta principal (violeta + acento cálido)
-$color-primario: #8b5cf6; // violeta principal
-$color-secundario: #a78bfa; // violeta claro
-$color-acento: #f5c518; // detalle dorado suave o podés usar rosa #ec4899
+// Tipos
+$font-sans: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 
-// 🌫️ Fondo y texto
-$bg: #f9f8ff; // fondo muy claro con leve violeta
-$texto-principal: #1a1a1a;
-$texto-secundario: #4b5563;
+// Sombras y radios
+$radius: 14px;
+$shadow-soft: 0 8px 24px rgba(0,0,0,.08);
+$shadow-focus: 0 0 0 4px rgba(151,249,249,.35);
 
-// 🟪 Elementos UI
-$border-color: lighten($texto-principal, 60%);
-$hover-color: darken($color-primario, 8%);
-$btn-color: $color-primario;
+// Espacios
+$sp-1: .5rem; $sp-2: .75rem; $sp-3: 1rem; $sp-4: 1.5rem; $sp-5: 2rem;
 
-// Tipografía
-$font-sans: 'Poppins', sans-serif;
+// Z-index
+$z-header: 1000;
 
-// Botones
-.btn-primary {
-  background-color: $color-primario !important;
-  border-color: $color-primario !important;
-  color: $white !important;
+// Breakpoints
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
 
-  &:hover {
-    background-color: $hover-color !important;
-  }
-}
-
-.btn-outline-primary {
-  border-color: $color-primario !important;
-  color: $color-primario !important;
-
-  &:hover {
-    background-color: $hover-color !important;
-  }
-}

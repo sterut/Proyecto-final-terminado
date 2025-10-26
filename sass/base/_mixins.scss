@@ -1,16 +1,17 @@
-// mixins y helpers
+@mixin container-padded {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: $sp-3;
+}
+
+@mixin fluid-type($min, $max) {
+  font-size: clamp($min, 2vw + 1rem, $max);
+}
+
 @mixin respond($bp) {
-  @if $bp == mobile {
-    @media (max-width: $break-mobile) { @content; }
-  }
+  @if $bp == sm { @media (min-width: $bp-sm) { @content; } }
+  @else if $bp == md { @media (min-width: $bp-md) { @content; } }
+  @else if $bp == lg { @media (min-width: $bp-lg) { @content; } }
+  @else if $bp == xl { @media (min-width: $bp-xl) { @content; } }
 }
 
-@mixin flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@mixin transition($prop: all, $time: .25s, $e: ease) {
-  transition: $prop $time $e;
-}

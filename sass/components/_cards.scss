@@ -1,21 +1,23 @@
-// _cards.scss
 .card {
-  border: 1px solid #eee;
-  border-radius: 8px;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   }
 
-  .card-title {
-    color: $primary;
-    font-weight: 600;
+  img {
+    width: 80px; // controla el ancho del ícono
+    height: 80px;
+    object-fit: contain; // evita que se corte
+    margin: 1rem auto 0;
   }
 
-  .card-text {
-    color: #555;
+  .card-body {
+    text-align: center;
   }
 }
 

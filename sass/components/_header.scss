@@ -1,13 +1,8 @@
-// _header.scss
-header {
-  background-color: transparent;
-  nav a {
-    color: #fff;
-    font-weight: 500;
-    text-decoration: none;
-
-    &:hover {
-      color: #d1b3ff;
-    }
-  }
+.site-header{
+  position: sticky; top:0; z-index:$z-header; backdrop-filter: saturate(180%) blur(10px);
+  background: rgba(255,255,255,.75); border-bottom: 1px solid rgba(0,0,0,.05);
+  .navbar{ @include container-padded; }
+  .navbar-brand{ font-weight:800; letter-spacing:.2px; }
+  .nav-link{ padding-inline:$sp-2; }
+  .navbar-toggler:focus{ box-shadow: $shadow-focus; }
 }

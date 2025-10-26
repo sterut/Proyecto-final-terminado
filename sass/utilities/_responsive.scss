@@ -1,0 +1,3 @@
+/* Helpers rápidos */
+.hide-mobile{ display:none; @include respond(md){ display:initial; } }
+.max-w-prose{ max-width:65ch; }

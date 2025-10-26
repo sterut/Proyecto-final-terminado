@@ -1,11 +1,5 @@
-form {
-  input[type="email"], select {
-    padding: .6rem .8rem;
-    border-radius: 8px;
-    border: 1px solid rgba(0,0,0,0.12);
-  }
-
-  button { @include transition; }
+.form-control:focus{
+  border-color: $color-secundario;
+  box-shadow: $shadow-focus;
 }
-
 

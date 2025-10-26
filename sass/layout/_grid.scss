@@ -1,7 +1,9 @@
-.container {
-  max-width: $max-width;
-  margin: 0 auto;
-  padding: 0 1rem;
+/* Utilidades además de Bootstrap */
+.container-caba{ @include container-padded; }
+.grid-auto{
+  display:grid; gap:$sp-4;
+  grid-template-columns: 1fr;
+  @include respond(md){ grid-template-columns: repeat(2,1fr); }
+  @include respond(lg){ grid-template-columns: repeat(4,1fr); }
 }
-.row-gap { gap: 1.25rem; }
 

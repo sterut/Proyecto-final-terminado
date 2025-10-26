@@ -34,8 +34,8 @@ button {
 /* Utilidades además de Bootstrap */
 .container-caba {
   max-width: 1200px;
-  margin-inline: auto;
-  padding-inline: 1rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 .grid-auto {
@@ -54,23 +54,9 @@ button {
   }
 }
 
-.hero {
-  min-height: 70vh;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  color: #111;
-  background: radial-gradient(1200px 600px at 50% -10%, rgba(151, 249, 249, 0.35), transparent), radial-gradient(1000px 700px at 120% 10%, rgba(164, 222, 249, 0.35), transparent), #fff;
-  padding-block: 2rem;
-}
-.hero h1 {
-  font-size: clamp(1.6rem, 2vw + 1rem, 3rem);
+h1 {
+  font-size: 2.5rem;
   margin-bottom: 0.75rem;
-}
-.hero .lead {
-  color: #555;
-  max-width: 45ch;
-  margin-inline: auto;
 }
 
 .site-header {
@@ -83,8 +69,8 @@ button {
 }
 .site-header .navbar {
   max-width: 1200px;
-  margin-inline: auto;
-  padding-inline: 1rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 .site-header .navbar-brand {
   font-weight: 800;
@@ -184,3 +170,5 @@ button {
 .max-w-prose {
   max-width: 65ch;
 }
+
+/*# sourceMappingURL=styles.css.map */

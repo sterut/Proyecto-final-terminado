@@ -1,17 +1,22 @@
+// === MIXINS ===
+
+// 1️⃣ Contenedor con padding lateral
 @mixin container-padded {
-  max-width: 1200px;
-  margin-inline: auto;
-  padding-inline: $sp-3;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 $sp-4;
 }
 
-@mixin fluid-type($min, $max) {
-  font-size: clamp($min, 2vw + 1rem, $max);
-}
-
-@mixin respond($bp) {
-  @if $bp == sm { @media (min-width: $bp-sm) { @content; } }
-  @else if $bp == md { @media (min-width: $bp-md) { @content; } }
-  @else if $bp == lg { @media (min-width: $bp-lg) { @content; } }
-  @else if $bp == xl { @media (min-width: $bp-xl) { @content; } }
+// 2️⃣ Mixin de media queries (responsive)
+@mixin respond($break) {
+  @if $break == sm {
+    @media (min-width: $bp-sm) { @content; }
+  } @else if $break == md {
+    @media (min-width: $bp-md) { @content; }
+  } @else if $break == lg {
+    @media (min-width: $bp-lg) { @content; }
+  } @else if $break == xl {
+    @media (min-width: $bp-xl) { @content; }
+  }
 }
 

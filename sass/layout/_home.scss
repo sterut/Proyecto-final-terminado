@@ -1,11 +1,4 @@
-.hero{
-  min-height: 70vh; display:grid; place-items:center; text-align:center; color:#111;
-  background: radial-gradient(1200px 600px at 50% -10%, rgba(151,249,249,.35), transparent),
-              radial-gradient(1000px 700px at 120% 10%, rgba(164,222,249,.35), transparent),
-              #fff;
-  padding-block: $sp-5;
-
-  h1{ @include fluid-type(1.6rem, 3rem); margin-bottom:$sp-2; }
-  .lead{ color:$color-texto-suave; max-width:45ch; margin-inline:auto; }
+h1 {
+  font-size: 2.5rem; // tamaño fijo que no da error
+  margin-bottom: $sp-2;
 }
-
